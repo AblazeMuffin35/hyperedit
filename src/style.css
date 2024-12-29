@@ -1,0 +1,221 @@
+body {
+    overflow: hidden;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.ql-container {
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    height: 400px;
+}
+  
+.ql-toolbar {
+    border-radius: 15px 15px 0 0;
+}
+
+.ql-editor {
+    font-size: 16px;
+}
+
+.textEditor {
+    flex: 1;
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#display {
+    height: 459px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-left: 20px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
+    line-height: 0.5;
+    padding-top: 5px;
+}
+
+#code-display {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.15);
+}
+
+#title{
+    color: #0066cc;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#title p {
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.8);
+    letter-spacing: normal;
+}
+
+#info {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    background-color: #f8f8f8;
+    color: black;
+    user-select: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.1s;
+    text-decoration: none;
+}
+
+#info:hover {
+    background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+pre code.hljs {
+    max-height: 400px;
+    margin-left: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: col-resize;
+}
+
+#title label {
+    user-select: none;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.8);
+    letter-spacing: normal;
+}
+
+.dropdown {
+    background-color: #f8f8f8;
+    user-select: none;
+    padding: 5px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.dropdown:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:focus {
+    outline: none;
+}
+
+/* Quill Styles */
+
+.ql-font-helvetica {
+    font-family: Helvetica, sans-serif;
+}
+.ql-font-times-new-roman {
+    font-family: 'Times New Roman', serif;
+}
+.ql-font-courier-new {
+    font-family: 'Courier New', monospace;
+}
+.ql-font-cursive {
+    font-family: cursive;
+}
+
+.ql-size-8px {
+    font-size: 8px;
+}
+.ql-size-12px {
+    font-size: 12px;
+}
+.ql-size-16px {
+    font-size: 16px;
+}
+.ql-size-20px {
+    font-size: 20px;
+}
+.ql-size-24px {
+    font-size: 24px;
+}
+.ql-size-32px {
+    font-size: 32px;
+}
+
+.ql-align-center {
+    text-align: center;
+}
+.ql-align-right {
+    text-align: right;
+}
+.ql-align-justify {
+    text-align: justify;
+}
+.ql-align-left {
+    text-align: left;
+}
+
+.ql-indent-1 {
+    padding-left: 40px;
+}
+.ql-indent-2 {
+    padding-left: 80px;
+}
+.ql-indent-3 {
+    padding-left: 120px;
+}
+.ql-indent-4 {
+    padding-left: 160px;
+}
+.ql-indent-5 {
+    padding-left: 200px;
+}
+.ql-indent-6 {
+    padding-left: 240px;
+}
+.ql-indent-7 {
+    padding-left: 280px;
+}
+.ql-indent-8 {
+    padding-left: 320px;
+}
+
+a {
+    text-decoration: underline;
+    color: #0066cc;
+}
